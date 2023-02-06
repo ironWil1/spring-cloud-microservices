@@ -1,8 +1,8 @@
-package com.microservices.account.entity;
-
+package com.microservices.deposit.entity;
 import javax.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.List;
 
@@ -13,19 +13,16 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 @Builder
-public class Account {
+public class Deposit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long accountID;
+    private Long depositId;
 
-    private String name;
+    private BigDecimal amount;
 
-    private String email;
-
-    private String phone;
+    private Long billId;
 
     private OffsetDateTime creationDate;
 
-    @ElementCollection
-    private List<Long> billsIds;
+    private String email;
 }

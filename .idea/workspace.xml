@@ -5,53 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96d2a72-f4eb-4d74-b125-4a66e581ceaa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/AccountApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/BillApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bill-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build-spring-boot.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/java/com/microservices/config/ConfigApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/account-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/bill-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/gateway.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/registry.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/DepositApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/microservices/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom-spring-boot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry/src/main/java/com/microservices/registry/RegistryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registry/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/controller/DepositController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/controller/dto/DepositRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/controller/dto/DepositResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/entity/Deposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/exceptions/DepositServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/repository/DepositRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/AccountServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/BillServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/dto/AccountResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/dto/BillRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/dto/BillResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/service/DepositService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/configs/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/service/DepositMessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/service/DepositResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/AccountApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/AccountApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/dto/AccountRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/dto/AccountRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/dto/AccountResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/dto/AccountResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/exceptions/AccountNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/exceptions/AccountNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/BillApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/BillApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/BillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/BillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/dto/BillRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/dto/BillRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/dto/BillResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/dto/BillResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/entity/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/exceptions/BillNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/exceptions/BillNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/service/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/service/BillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/java/com/microservices/config/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/java/com/microservices/config/ConfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/deposit-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/services/notification-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deposit-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/DepositApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/DepositApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/microservices/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/microservices/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/NotificationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/configs/MailConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/microservices/notification/configs/MailConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/resources/mail-props.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/resources/mail-props.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/registry/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/com/microservices/registry/RegistryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/registry/src/main/java/com/microservices/registry/RegistryApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +89,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -91,17 +100,24 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2KmlxnKPXUD5F341A0BA0h4Tkua" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -111,21 +127,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/GIT_local/pet_clinic_feign_client_mock",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GIT_local/pet_clinic_feign_client_mock&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.33932853&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;198f5166fe21f562a98ee4d305d66589&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\GIT_local\spring-cloud-microservices\registry\src\main\resources" />
@@ -134,6 +164,107 @@
       <recent name="C:\GIT_local\spring-cloud-microservices\deposit-service\src\main\resources" />
       <recent name="C:\GIT_local\spring-cloud-microservices\bill-service\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.microservices.deposit.rest.dto" />
+      <recent name="com.microservices.deposit.controller.dto" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
+    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="account-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.account.AccountApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bill-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.bill.BillApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.bill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.config.ConfigApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepositApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="deposit-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.deposit.DepositApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.notification.NotificationApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.notification.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservices.registry.RegistryApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.microservices.registry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.NotificationApplication" />
+        <item itemvalue="Spring Boot.BillApplication" />
+        <item itemvalue="Spring Boot.RegistryApplication" />
+        <item itemvalue="Spring Boot.ConfigApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -143,7 +274,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674587889018</updated>
-      <workItem from="1674587891532" duration="11592000" />
+      <workItem from="1674587891532" duration="27956000" />
+      <workItem from="1674753513916" duration="40649000" />
+      <workItem from="1675668315733" duration="899000" />
     </task>
     <servers />
   </component>
@@ -163,5 +296,64 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/service/DepositService.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/controller/AccountController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/account-service/src/main/java/com/microservices/account/service/AccountService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/service/BillService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/controller/BillController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/service/DepositService.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/service/BillService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/deposit-service/src/main/java/com/microservices/deposit/rest/BillServiceClient.java</url>
+          <line>14</line>
+          <properties class="com.microservices.deposit.rest.BillServiceClient" method="getBillById">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.microservices.bill.entity.Bill" memberName="amount" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/bill-service/src/main/java/com/microservices/bill/service/BillService.java" line="30">
+        <watch expression="bill.amount" language="JAVA" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>

@@ -1,2 +1,8 @@
-package com.microservices.bill.exceptions;public class BillNotFoundException {
+package com.microservices.bill.exceptions;
+
+public class BillNotFoundException extends RuntimeException{
+
+    public BillNotFoundException(String message) {
+        super(message);
+    }
 }

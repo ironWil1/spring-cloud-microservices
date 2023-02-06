@@ -1,6 +1,5 @@
-package com.microservices.account.controller.dto;
+package com.microservices.deposit.rest.dto;
 
-import com.microservices.account.entity.Account;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,12 +26,5 @@ public class AccountResponseDTO {
     private List<Long> billsIds;
 
     private OffsetDateTime creationDate;
-    public AccountResponseDTO(Account account) {
-        this.accountID = account.getAccountID();
-        this.name = account.getName();
-        this.email = account.getEmail();
-        this.phone = account.getPhone();
-        this.creationDate = account.getCreationDate();
-        this.billsIds = account.getBillsIds();
-    }
+
 }

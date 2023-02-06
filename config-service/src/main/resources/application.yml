@@ -4,7 +4,6 @@ spring:
       server:
         native:
           search-locations: classpath:/services
-
   profiles:
     active: native
   security:
